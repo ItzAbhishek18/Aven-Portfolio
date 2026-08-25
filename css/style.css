@@ -1752,6 +1752,479 @@ footer p {
 
     font-weight: normal;
 }
+
+/* =========================================================
+   PROJECT CASE STUDY
+========================================================= */
+
+.project-nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 6vw;
+
+    border-bottom:
+        1px solid var(--border);
+
+    font-family: monospace;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+}
+
+.project-nav a {
+
+    color: var(--text);
+
+    text-decoration: none;
+
+}
+
+.project-nav > span {
+
+    color: #555;
+
+}
+
+.case-study {
+
+    width: min(1400px, 88%);
+
+    margin: auto;
+
+}
+
+
+/* CASE HERO */
+
+.case-hero {
+
+    padding:
+        130px 0 100px;
+
+    max-width: 1100px;
+}
+
+.case-type {
+
+    margin-top: 20px;
+
+    color:
+        var(--accent-bright);
+
+    font-family: monospace;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 2px;
+}
+
+.case-hero h1 {
+
+    margin-top: 25px;
+
+    font-size:
+        clamp(4rem, 10vw, 10rem);
+
+    line-height: 0.83;
+
+    letter-spacing: -6px;
+}
+
+.case-hero h1 span {
+
+    display: block;
+
+    color:
+        var(--accent-bright);
+}
+
+.case-intro {
+
+    max-width: 650px;
+
+    margin-top: 45px;
+
+    color: var(--muted);
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+}
+
+
+/* META */
+
+.case-meta {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
+    margin-bottom: 100px;
+}
+
+.case-meta div {
+
+    padding: 25px;
+
+    border-right:
+        1px solid var(--border);
+}
+
+.case-meta div:last-child {
+
+    border-right: none;
+}
+
+.case-meta span,
+.code-facts span {
+
+    display: block;
+
+    color: #555;
+
+    font-family: monospace;
+
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.case-meta strong {
+
+    font-size: 0.8rem;
+
+    font-weight: normal;
+
+    color: #ccc;
+}
+
+
+/* IMAGE */
+
+.case-image {
+
+    border:
+        1px solid var(--border);
+
+    background:
+        #111;
+
+    padding: 15px;
+
+    margin-bottom: 160px;
+}
+
+.image-label {
+
+    padding:
+        10px 5px 15px;
+
+    color: #555;
+
+    font-family: monospace;
+
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+}
+
+.case-image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+/* CASE SECTIONS */
+
+.case-section {
+
+    display: grid;
+
+    grid-template-columns:
+        220px 1fr;
+
+    gap: 100px;
+
+    padding:
+        100px 0;
+
+    border-top:
+        1px solid var(--border);
+}
+
+.case-section-label {
+
+    color: #555;
+
+    font-family: monospace;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+}
+
+.case-section-content {
+
+    max-width: 850px;
+}
+
+.case-section-content h2 {
+
+    font-size:
+        clamp(2.5rem, 5vw, 5rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 40px;
+}
+
+.case-section-content p {
+
+    max-width: 700px;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 22px;
+}
+
+
+/* ROLE GRID */
+
+.role-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 60px;
+}
+
+.role-grid article {
+
+    min-height: 260px;
+
+    padding: 25px;
+
+    border:
+        1px solid var(--border);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.role-grid span {
+
+    color:
+        var(--accent-bright);
+
+    font-family: monospace;
+
+    font-size: 0.65rem;
+}
+
+.role-grid h3 {
+
+    margin-top: 60px;
+
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+}
+
+.role-grid p {
+
+    margin-top: auto;
+
+    font-size: 0.85rem;
+
+    margin-bottom: 0;
+}
+
+
+/* WORKFLOW */
+
+.workflow {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto 1fr auto 1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 60px;
+}
+
+.workflow > div:not(.workflow-arrow) {
+
+    min-height: 180px;
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.workflow span {
+
+    color:
+        var(--accent-bright);
+
+    font-family: monospace;
+
+    font-size: 0.65rem;
+}
+
+.workflow strong {
+
+    margin-top: 45px;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 1px;
+}
+
+.workflow p {
+
+    margin-top: auto;
+
+    margin-bottom: 0;
+
+    font-size: 0.72rem;
+
+    line-height: 1.5;
+}
+
+.workflow-arrow {
+
+    color: #444;
+
+    font-size: 1.2rem;
+}
+
+
+/* TECHNICAL FACTS */
+
+.code-facts {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    margin-top: 60px;
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.code-facts div {
+
+    padding: 25px;
+
+    border-right:
+        1px solid var(--border);
+}
+
+.code-facts div:last-child {
+
+    border-right: none;
+}
+
+.code-facts strong {
+
+    font-family: monospace;
+
+    font-size: 0.75rem;
+
+    font-weight: normal;
+}
+
+
+/* END */
+
+.case-end {
+
+    padding:
+        100px 0;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    border-top:
+        1px solid var(--border);
+}
+
+.case-end p {
+
+    color: #555;
+
+    font-family: monospace;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+}
+
+.case-end a {
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    font-family: monospace;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+}
+
+.case-end a:hover {
+
+    color:
+        var(--accent-bright);
+}
 /* =========================================================
    16 — MOBILE
 ========================================================= */
@@ -1982,6 +2455,99 @@ footer p {
 
         gap: 20px;
     }
+
+    /* PROJECT CASE STUDY — MOBILE */
+
+.project-nav {
+    padding: 20px 5vw;
+}
+
+.case-study {
+    width: 90%;
+}
+
+.case-hero {
+    padding:
+        90px 0 70px;
+}
+
+.case-hero h1 {
+    font-size:
+        clamp(3.5rem, 17vw, 6rem);
+
+    letter-spacing: -4px;
+}
+
+.case-intro {
+    font-size: 1rem;
+}
+
+.case-meta {
+    grid-template-columns: 1fr 1fr;
+}
+
+.case-meta div:nth-child(2) {
+    border-right: none;
+}
+
+.case-meta div:nth-child(-n+2) {
+    border-bottom:
+        1px solid var(--border);
+}
+
+.case-image {
+    margin-bottom: 90px;
+}
+
+.case-section {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 70px 0;
+}
+
+.case-section-content h2 {
+    font-size:
+        clamp(2.5rem, 13vw, 4rem);
+
+    letter-spacing: -2px;
+}
+
+.role-grid {
+    grid-template-columns: 1fr;
+}
+
+.workflow {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+}
+
+.workflow-arrow {
+    display: none;
+}
+
+.code-facts {
+    grid-template-columns: 1fr 1fr;
+}
+
+.code-facts div:nth-child(2) {
+    border-right: none;
+}
+
+.code-facts div:nth-child(-n+2) {
+    border-bottom:
+        1px solid var(--border);
+}
+
+.case-end {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 30px;
+}
     /* =========================================================
    CUSTOM CURSOR
 ========================================================= */
