@@ -2353,6 +2353,19 @@ footer p {
     }
 
 
+.system-roles {
+    grid-template-columns: 1fr;
+}
+
+.state-flow {
+    flex-direction: column;
+}
+
+.state-flow span {
+    transform: rotate(90deg);
+}
+
+
     /* PROJECTS */
 
 #projects {
@@ -2465,21 +2478,145 @@ footer p {
 .case-study {
     width: 90%;
 }
+/* SYSTEM MAP */
 
+.system-map {
+    margin-top: 60px;
+}
+
+.system-node {
+    border: 1px solid var(--border);
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.01);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.system-node span,
+.ride-state > span {
+    color: #555;
+
+    font-family: monospace;
+
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+}
+
+.system-node strong {
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+}
+
+.system-node small {
+    color: var(--muted);
+
+    font-size: 0.75rem;
+
+    line-height: 1.5;
+}
+
+.login-node {
+    max-width: 300px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.system-line {
+    width: 1px;
+
+    height: 45px;
+
+    background: var(--border);
+
+    margin: auto;
+}
+
+.system-roles {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.ride-state {
+    border: 1px solid var(--border);
+
+    padding: 30px;
+}
+
+.state-flow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.state-flow div {
+    padding: 12px 16px;
+
+    border: 1px solid var(--border);
+
+    font-family: monospace;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 1px;
+}
+
+.state-flow span {
+    color: var(--accent-bright);
+}
+
+.state-secondary {
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #555;
+
+    font-family: monospace;
+
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+}
 .case-hero {
-    padding:
-        90px 0 70px;
+    padding: 70px 0 35px;
+    max-width: 1100px;
 }
 
 .case-hero h1 {
-    font-size:
-        clamp(3.5rem, 17vw, 6rem);
+    margin-top: 25px;
 
-    letter-spacing: -4px;
+    font-size: clamp(4rem, 7vw, 7.5rem);
+
+    line-height: 0.86;
+
+    letter-spacing: -5px;
+
+    max-width: 1200px;
 }
 
 .case-intro {
-    font-size: 1rem;
+
+    max-width: 650px;
+
+    margin-top: 30px;
 }
 
 .case-meta {
@@ -2496,7 +2633,16 @@ footer p {
 }
 
 .case-image {
-    margin-bottom: 90px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        #111;
+
+    padding: 15px;
+
+    margin-bottom: 100px;
 }
 
 .case-section {

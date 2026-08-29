@@ -65,16 +65,29 @@
                 <span>BOOKING SYSTEM.</span>
             </h1>
 
-            <p class="case-intro">
-                A Python desktop application designed to
-                simulate a taxi booking workflow through
-                separate Customer, Driver, and Admin roles.
+             <p class="case-intro">
+                 A Python/Tkinter desktop prototype exploring
+                 role-based taxi booking workflows across
+                 Customer, Driver, and Admin interfaces.
             </p>
 
         </section>
 
 
-        <!-- PROJECT META -->
+
+        <section class="case-image">
+
+            <div class="image-label">
+                APPLICATION / LOGIN SCREEN
+            </div>
+
+            <img
+                src="assets/projects/taxi-booking/login.png"
+                alt="Taxi Booking System login screen"
+            >
+
+        </section>
+
 
         <section class="case-meta">
 
@@ -101,60 +114,97 @@
         </section>
 
 
-        <!-- SCREENSHOT -->
-
-        <section class="case-image">
-
-            <div class="image-label">
-                APPLICATION / LOGIN SCREEN
-            </div>
-
-            <img
-                src="assets/projects/taxi-booking/login.png"
-                alt="Taxi Booking System login screen"
-            >
-
-        </section>
-
-
         <!-- OVERVIEW -->
 
-        <section class="case-section">
+       <section class="case-section system-section">
 
-            <div class="case-section-label">
-                01 — OVERVIEW
+    <div class="case-section-label">
+        01 — SYSTEM MAP
+    </div>
+
+    <div class="case-section-content">
+
+        <h2>
+            THREE ROLES.
+            ONE SHARED
+            WORKFLOW.
+        </h2>
+
+        <p>
+            The system is organized around three user roles.
+            Each role interacts with the ride lifecycle from
+            a different point of view.
+        </p>
+
+        <div class="system-map">
+
+            <div class="system-node login-node">
+                <span>ENTRY</span>
+                <strong>LOGIN</strong>
             </div>
 
-            <div class="case-section-content">
+            <div class="system-line"></div>
 
-                <h2>
-                    A SMALL SYSTEM
-                    WITH MULTIPLE
-                    MOVING PARTS.
-                </h2>
+            <div class="system-roles">
 
-                <p>
-                    This project was developed as a college
-                    assignment to explore the design and
-                    implementation of a taxi booking system.
-                </p>
+                <div class="system-node">
+                    <span>ROLE / 01</span>
+                    <strong>CUSTOMER</strong>
+                    <small>
+                        Request · Cancel · Rate
+                    </small>
+                </div>
 
-                <p>
-                    Instead of building separate programs for
-                    each type of user, the system combines
-                    Customer, Driver, and Admin roles into a
-                    single desktop application.
-                </p>
+                <div class="system-node">
+                    <span>ROLE / 02</span>
+                    <strong>DRIVER</strong>
+                    <small>
+                        Accept · Update Status
+                    </small>
+                </div>
 
-                <p>
-                    The different roles interact with the same
-                    ride information, creating a simple
-                    end-to-end booking workflow.
-                </p>
+                <div class="system-node">
+                    <span>ROLE / 03</span>
+                    <strong>ADMIN</strong>
+                    <small>
+                        Manage Users · Manage Rides
+                    </small>
+                </div>
 
             </div>
 
-        </section>
+            <div class="system-line"></div>
+
+            <div class="ride-state">
+
+                <span>SHARED RIDE STATE</span>
+
+                <div class="state-flow">
+
+                    <div>REQUESTED</div>
+                    <span>→</span>
+
+                    <div>ACCEPTED</div>
+                    <span>→</span>
+
+                    <div>ON THE WAY</div>
+                    <span>→</span>
+
+                    <div>COMPLETED</div>
+
+                </div>
+
+                <div class="state-secondary">
+                    CANCELLED
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- SYSTEM -->
